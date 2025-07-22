@@ -1,0 +1,22 @@
+{
+  "name": "extract-hls",
+  "version": "1.0.0",
+  "description": "API que extrai o master.m3u8 e serve via proxy",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+  "compression": "^1.7.4",
+  "cors": "^2.8.5",
+  "express": "^4.18.2",
+  "express-rate-limit": "^7.0.0",
+  "got": "^13.0.0",
+  "helmet": "^7.0.0",
+  "puppeteer": "^22.6.3"
+}
+}
