@@ -1,0 +1,15 @@
+[tool.nixpacks]
+providers = ["node"]
+
+[tool.nixpacks.build]
+cmds = ["npm install"]
+
+[tool.nixpacks.start]
+cmd = "npm start"
+
+[tool.nixpacks.phases.setup]
+packages = ["ffmpeg", "chromium"]
+
+[tool.nixpacks.env]
+NODE_VERSION = "20.x"
+PUPPETEER_EXECUTABLE_PATH = "/usr/bin/chromium-browser"
